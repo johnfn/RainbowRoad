@@ -1,0 +1,5 @@
+{
+  "destination": "./compiled",
+  "source": "./src",
+  "godotSourceRepoPath": "/Users/johnfn/code/tsgd/godot"
+}

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://RainbowRoad.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RainbowRoad" type="Sprite" parent="."]
+position = Vector2( 295.067, 271.4 )
+scale = Vector2( 0.426667, 0.426667 )
+texture = ExtResource( 1 )
