@@ -1,5 +1,6 @@
 declare type NodePathToTypePlayer = {
-
+  "CollisionShape2D": CollisionShape2D,
+  "RainbowRoad2": Sprite,
 }    
 
   
