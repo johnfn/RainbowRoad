@@ -4,9 +4,9 @@ declare type AssetType = {
   'res://favicon.png': StreamTexture,
   'res://icon.png': StreamTexture,
   'res://assets/block.png': StreamTexture,
-  'res://MainScene.tscn': Node2D,
   'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
-  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player
+  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
+  'res://MainScene.tscn': Node2D
 }
 
 declare type AssetPath = keyof AssetType;
