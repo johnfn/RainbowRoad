@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/star-base.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 152.377, 168.872 )
+extents = Vector2( 65.3047, 63.3367 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 174.762, 181.171 )

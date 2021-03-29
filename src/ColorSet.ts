@@ -6,10 +6,10 @@ class ColorSetSingleton extends Node2D {
     new Color(1, 1, 0),
     new Color(0, 1, 0),
     new Color(0, 1, 1),
-  ];
+  ]
 }
 
-export const ColorSet = new ColorSetSingleton();
+export const ColorSet = new ColorSetSingleton()
 
 // _ready() {
 //   const root = this.get_tree().root;

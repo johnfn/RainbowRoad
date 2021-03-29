@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://compiled/Hud.gd"
 }, {
-"base": "Node2D",
+"base": "StaticBody2D",
 "class": "Level1",
 "language": "GDScript",
 "path": "res://compiled/Level1.gd"
@@ -50,6 +50,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+PlayMusicScene="*res://PlayMusicScene.tscn"
 ColorSet="*res://compiled/ColorSet.gd"
 
 [rendering]

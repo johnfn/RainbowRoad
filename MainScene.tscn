@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TestScene.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,19 +10,22 @@
 
 [node name="block" parent="." instance=ExtResource( 2 )]
 position = Vector2( 174.611, 410.356 )
+script = null
 
 [node name="block2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 536.18, 355.811 )
-beat_count = 5
+script = null
 
 [node name="block3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 440.681, 388.931 )
-beat_count = 4
+script = null
 
 [node name="block4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 350.703, 383.963 )
-beat_count = 3
+script = null
 
 [node name="block5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 255.757, 375.683 )
-beat_count = 2
+script = null
+
+[node name="Test" parent="." instance=ExtResource( 3 )]

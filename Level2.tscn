@@ -8,11 +8,12 @@
 [node name="Level2" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 98.0321, 253.612 )
+position = Vector2( 98.0321, 252.674 )
 scale = Vector2( 1, 1 )
 
 [node name="block" parent="." instance=ExtResource( 2 )]
 position = Vector2( 109.473, 355.811 )
+script = null
 
 [node name="staticblock" parent="." instance=ExtResource( 4 )]
 position = Vector2( 22.255, 354.155 )
@@ -21,15 +22,19 @@ script = null
 [node name="block2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 914.402, 370.55 )
 scale = Vector2( 1.78386, 1.71762 )
+script = null
 
 [node name="block3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 351.807, 358.238 )
+script = null
 
 [node name="block4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 281.15, 357.134 )
+script = null
 
 [node name="block5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 195.588, 358.019 )
+script = null
 
 [node name="staticblock2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 453.028, 356.971 )
@@ -37,12 +42,15 @@ script = null
 
 [node name="block7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 782.58, 361.053 )
+script = null
 
 [node name="block8" parent="." instance=ExtResource( 2 )]
 position = Vector2( 711.923, 359.95 )
+script = null
 
 [node name="block9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 626.361, 360.834 )
+script = null
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 933.722, 275.052 )
