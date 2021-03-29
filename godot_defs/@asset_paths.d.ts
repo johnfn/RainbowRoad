@@ -6,11 +6,12 @@ declare type AssetType = {
   'res://assets/block1.png': StreamTexture,
   'res://assets/star-base.png': StreamTexture,
   'res://assets/star-glasses.png': StreamTexture,
-  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
-  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
   'res://RainbowRoad.png': StreamTexture,
   'res://favicon.png': StreamTexture,
-  'res://MainScene.tscn': Node2D
+  'res://block.tscn': Sprite,
+  'res://MainScene.tscn': Node2D,
+  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
+  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player
 }
 
 declare type AssetPath = keyof AssetType;

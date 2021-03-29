@@ -5,12 +5,6 @@ export class Player extends KinematicBody2D {
   speed: float = 200.0
   vy: float = 0.0
 
-  constructor() {
-    super()
-
-    print("Hello world")
-  }
-
   _physics_process(delta: float) {
     let dx = 0.0
     let dy = 0.0
@@ -39,6 +33,12 @@ export class Player extends KinematicBody2D {
 
     if (Input.is_key_pressed(KeyList.KEY_SPACE) && this.is_on_floor()) {
       this.vy = -1.3
+    }
+
+    if (!Input.is_key_pressed(KeyList.KEY_SPACE)) {
+      if (this.vy < 0) {
+        this.vy = 0
+      }
     }
 
     dy += this.vy
