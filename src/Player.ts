@@ -5,6 +5,10 @@ export class Player extends KinematicBody2D {
   speed: float = 200.0
   vy: float = 0.0
 
+  constructor() {
+    super()
+  }
+
   _physics_process(delta: float) {
     let dx = 0.0
     let dy = 0.0
@@ -46,5 +50,17 @@ export class Player extends KinematicBody2D {
     const dPosition = new Vector2(dx, dy).mul(this.speed)
 
     this.move_and_slide(dPosition, new Vector2(0, -1))
+  }
+
+  enter_door() {
+    let current_scene = this.get_tree().current_scene.name
+
+    if (current_scene === "Level1") {
+      this.get_tree().change_scene("res://Level2.tscn")
+    } else if (current_scene === "Level2") {
+      this.get_tree().change_scene("res://Level3.tscn")
+    } else if (current_scene === "Level3") {
+      this.get_tree().change_scene("res://YouWin.tscn")
+    }
   }
 }
