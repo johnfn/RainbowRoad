@@ -25,9 +25,9 @@ _global_script_classes=[ {
 "path": "res://compiled/Hud.gd"
 }, {
 "base": "Node2D",
-"class": "Level",
+"class": "Level1",
 "language": "GDScript",
-"path": "res://compiled/Level.gd"
+"path": "res://compiled/Level1.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Player",
@@ -38,7 +38,7 @@ _global_script_class_icons={
 "Block": "",
 "Door": "",
 "Hud": "",
-"Level": "",
+"Level1": "",
 "Player": ""
 }
 
