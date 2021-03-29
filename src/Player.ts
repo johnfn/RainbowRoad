@@ -2,6 +2,7 @@
 // * set up a local autobuilder to HTML5 so we can use liveshare
 
 export class Player extends KinematicBody2D {
+  @exports
   speed: float = 200.0
   vy: float = 0.0
 
@@ -61,6 +62,8 @@ export class Player extends KinematicBody2D {
       this.get_tree().change_scene("res://Level3.tscn")
     } else if (current_scene === "Level3") {
       this.get_tree().change_scene("res://YouWin.tscn")
+    } else {
+      print("What the...")
     }
   }
 }

@@ -1,5 +1,12 @@
 export class Block extends StaticBody2D {
-    colors = [Color(0, 0, 1), Color(1, 0, 1), Color(1, 0, 0), Color(1, 1, 0), Color(0, 1, 0), Color(0, 1, 1)]
+    colors = [
+        Color(0, 0, 1),
+        Color(1, 0, 1),
+        Color(1, 0, 0),
+        Color(1, 1, 0),
+        Color(0, 1, 0),
+        Color(0, 1, 1),
+    ]
     curr_beat: float = 0.0
     @exports
     beat_count: int = 1
