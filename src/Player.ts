@@ -7,29 +7,19 @@ export class Player extends KinematicBody2D {
   vy: float = 0.0;
   curr_beat: float = 0.0;
 
+  init_location: Vector2;
+
   constructor() {
     super();
+
+    this.init_location = this.position;
   }
 
-  set_eye_color(delta: float) {
-    this.curr_beat += delta;
-    while (this.curr_beat > ColorSet.colors.size()) {
-      this.curr_beat -= ColorSet.colors.size();
+  _process() {
+    if (this.position.y > 1000) {
+      this.position = this.init_location;
+      this.vy = 0;
     }
-    let color1i = floor(this.curr_beat);
-    let color_mix_perc = this.curr_beat - color1i;
-    let color2i = color1i + 1;
-    if (color2i == ColorSet.colors.size()) {
-      color2i--;
-    }
-    let color1 = ColorSet.colors[color1i];
-    let color2 = ColorSet.colors[color2i];
-
-    let h = color1.h * (1 - color_mix_perc) + color2.h * color_mix_perc;
-    let s = color1.s * (1 - color_mix_perc) + color2.s * color_mix_perc;
-    let v = color1.v * (1 - color_mix_perc) + color2.v * color_mix_perc;
-    let eye_color = Color.from_hsv(h, s, v);
-    this.get_node("Glasses").modulate = eye_color;
   }
 
   _physics_process(delta: float) {
@@ -75,6 +65,27 @@ export class Player extends KinematicBody2D {
     const dPosition = new Vector2(dx, dy).mul(this.speed);
 
     this.move_and_slide(dPosition, new Vector2(0, -1));
+  }
+
+  set_eye_color(delta: float) {
+    this.curr_beat += delta;
+    while (this.curr_beat > ColorSet.colors.size()) {
+      this.curr_beat -= ColorSet.colors.size();
+    }
+    let color1i = floor(this.curr_beat);
+    let color_mix_perc = this.curr_beat - color1i;
+    let color2i = color1i + 1;
+    if (color2i == ColorSet.colors.size()) {
+      color2i--;
+    }
+    let color1 = ColorSet.colors[color1i];
+    let color2 = ColorSet.colors[color2i];
+
+    let h = color1.h * (1 - color_mix_perc) + color2.h * color_mix_perc;
+    let s = color1.s * (1 - color_mix_perc) + color2.s * color_mix_perc;
+    let v = color1.v * (1 - color_mix_perc) + color2.v * color_mix_perc;
+    let eye_color = Color.from_hsv(h, s, v);
+    this.get_node("Glasses").modulate = eye_color;
   }
 
   enter_door() {
