@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://block.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Door.tscn" type="PackedScene" id=3]
+[ext_resource path="res://StaticBlock.tscn" type="PackedScene" id=4]
 
 [node name="Level2" type="Node2D"]
 
@@ -11,6 +12,10 @@ position = Vector2( 98.0321, 253.612 )
 
 [node name="block" parent="." instance=ExtResource( 2 )]
 position = Vector2( 102.297, 332.626 )
+
+[node name="staticblock" parent="." instance=ExtResource( 4 )]
+position = Vector2( 22.255, 354.155 )
+script = null
 
 [node name="block2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 484.567, 364.919 )

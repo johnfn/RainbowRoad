@@ -6,8 +6,19 @@ export class Player extends KinematicBody2D {
   speed: float = 200.0
   vy: float = 0.0
 
+  init_location: Vector2
+
   constructor() {
     super()
+
+    this.init_location = this.position
+  }
+
+  _process() {
+    if (this.position.y > 1000) {
+      this.position = this.init_location
+      this.vy = 0
+    }
   }
 
   _physics_process(delta: float) {
