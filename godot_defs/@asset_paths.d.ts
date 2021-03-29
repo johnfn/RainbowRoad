@@ -13,9 +13,10 @@ declare type AssetType = {
   'res://compiled/Door.gd': import('/Users/johnfn/code/RainbowRoad/src/Door').Door,
   'res://compiled/Door.gd': import('/Users/johnfn/code/RainbowRoad/src/Door').Door,
   'res://Level2.tscn': Node2D,
-  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
   'res://Level3.tscn': Node2D,
   'res://MainScene.tscn': Node2D,
+  'res://YouWin.tscn': Node2D,
+  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
   'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player
 }
 

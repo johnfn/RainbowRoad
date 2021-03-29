@@ -60,7 +60,7 @@ export class Player extends KinematicBody2D {
     } else if (current_scene === "Level2") {
       this.get_tree().change_scene("res://Level3.tscn")
     } else if (current_scene === "Level3") {
-      print("You win!")
+      this.get_tree().change_scene("res://YouWin.tscn")
     }
   }
 }
