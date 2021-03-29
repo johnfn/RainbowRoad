@@ -24,7 +24,7 @@ export class Hud extends Node2D {
   }
 
   _process(delta: float) {
-    this.beats_past += this.beats_per_sec * delta
+    this.beats_past += (this.beats_per_sec * delta) / 2.0
 
     if (this.beats_past > 5.0) {
       this.beats_past -= 5.0

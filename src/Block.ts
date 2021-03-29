@@ -32,8 +32,8 @@ export class Block extends StaticBody2D {
     let scale_factor = this.scale_curve(beat_dist)
     let shape = this.get_child(0)
     let sprite = this.get_child(1)
-    this.scale = Vector2(scale_factor, scale_factor)
-    sprite.scale = Vector2(scale_factor, scale_factor)
-    shape.scale = Vector2(scale_factor, scale_factor)
+    this.scale = new Vector2(scale_factor, scale_factor)
+    sprite.scale = new Vector2(scale_factor, scale_factor)
+    shape.scale = new Vector2(scale_factor, scale_factor)
   }
 }
