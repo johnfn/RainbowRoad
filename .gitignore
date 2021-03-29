@@ -1,3 +1,7 @@
+# ts2gd stuff
+godot_defs
+compiled
+
 # Godot 4+ specific ignores
 .godot/
 
@@ -19,6 +23,3 @@ mono_crash.*.json
 # System/tool-specific ignores
 .directory
 *~
-
-godot_defs
-compiled
