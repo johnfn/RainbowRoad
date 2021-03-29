@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://RainbowRoad.png" type="Texture" id=1]
+[ext_resource path="res://assets/star-glasses.png" type="Texture" id=1]
 [ext_resource path="res://compiled/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/star-base.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 152.377, 168.872 )
@@ -12,9 +13,15 @@ scale = Vector2( 0.125904, 0.125904 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -2.22876 )
 shape = SubResource( 1 )
 
-[node name="RainbowRoad2" type="Sprite" parent="."]
-position = Vector2( -1.73767, -13.3794 )
-scale = Vector2( 0.959747, 0.959747 )
+[node name="Body" type="Sprite" parent="."]
+position = Vector2( 0.0293579, -2.2356 )
+scale = Vector2( 0.64318, 0.64318 )
+texture = ExtResource( 3 )
+
+[node name="Glasses" type="Sprite" parent="."]
+position = Vector2( 0.0293579, -2.2356 )
+scale = Vector2( 0.64318, 0.64318 )
 texture = ExtResource( 1 )
