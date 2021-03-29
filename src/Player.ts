@@ -1,15 +1,19 @@
+// For next time:
+// * set up a local autobuilder to HTML5 so we can use liveshare
+
 export class Player extends KinematicBody2D {
-  speed: float = 200
-
-  constructor() {
-    super()
-
-    print("Hello world")
-  }
+  speed: float = 200.0
+  vy: float = 0.0
 
   _physics_process(delta: float) {
-    let dx = 0
-    let dy = 0
+    let dx = 0.0
+    let dy = 0.0
+
+    if (!this.is_on_floor()) {
+      this.vy += 0.03
+    } else {
+      this.vy = 0
+    }
 
     if (Input.is_key_pressed(KeyList.KEY_A)) {
       dx -= 1
@@ -26,6 +30,18 @@ export class Player extends KinematicBody2D {
     if (Input.is_key_pressed(KeyList.KEY_S)) {
       dy += 1
     }
+
+    if (Input.is_key_pressed(KeyList.KEY_SPACE) && this.is_on_floor()) {
+      this.vy = -1.3
+    }
+
+    if (!Input.is_key_pressed(KeyList.KEY_SPACE)) {
+      if (this.vy < 0) {
+        this.vy = 0
+      }
+    }
+
+    dy += this.vy
 
     const dPosition = new Vector2(dx, dy).mul(this.speed)
 
