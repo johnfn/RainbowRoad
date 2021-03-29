@@ -53,7 +53,14 @@ export class Player extends KinematicBody2D {
   }
 
   enter_door() {
-    print("Door!")
-    this.get_tree().change_scene("res://Level2.tscn")
+    let current_scene = this.get_tree().current_scene.name
+
+    if (current_scene === "Level1") {
+      this.get_tree().change_scene("res://Level2.tscn")
+    } else if (current_scene === "Level2") {
+      this.get_tree().change_scene("res://Level3.tscn")
+    } else if (current_scene === "Level3") {
+      print("You win!")
+    }
   }
 }

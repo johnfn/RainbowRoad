@@ -7,23 +7,24 @@
 [node name="Level2" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 98.0321, 253.612 )
+position = Vector2( 181.938, 110.088 )
 
 [node name="block" parent="." instance=ExtResource( 2 )]
-position = Vector2( 102.297, 332.626 )
+position = Vector2( 109.749, 187.447 )
+scale = Vector2( 4.43352, 1 )
 
 [node name="block2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 484.567, 364.919 )
+position = Vector2( 33.0195, 389.76 )
 scale = Vector2( 1.78386, 1.71762 )
 
 [node name="block3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 395.416, 428.124 )
+position = Vector2( 143.698, 424.812 )
 
 [node name="block4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 286.118, 320.482 )
+position = Vector2( 263.485, 350.29 )
 
 [node name="block5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 204.972, 418.188 )
+position = Vector2( 323.655, 228.848 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
-position = Vector2( 503.887, 269.421 )
+position = Vector2( 52.3403, 294.261 )

@@ -47,5 +47,17 @@ func _physics_process(_delta):
   self.move_and_slide(dPosition, Vector2(0, -1))
 
 func enter_door():
-  print("Door!")
-  self.get_tree().change_scene("res://Level2.tscn")
+  var current_scene = self.get_tree().current_scene.name
+  
+  if ((typeof(current_scene) == typeof("Level1")) and (current_scene == "Level1")):
+    self.get_tree().change_scene("res://Level2.tscn")
+    
+  
+  else:
+    if ((typeof(current_scene) == typeof("Level2")) and (current_scene == "Level2")):
+      self.get_tree().change_scene("res://Level3.tscn")
+      
+    
+    else:
+      if ((typeof(current_scene) == typeof("Level3")) and (current_scene == "Level3")):
+        print("You win!")

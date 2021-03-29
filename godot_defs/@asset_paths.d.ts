@@ -11,10 +11,11 @@ declare type AssetType = {
   'res://block.tscn': Sprite,
   'res://Door.tscn': Sprite,
   'res://compiled/Door.gd': import('/Users/johnfn/code/RainbowRoad/src/Door').Door,
-  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
   'res://compiled/Door.gd': import('/Users/johnfn/code/RainbowRoad/src/Door').Door,
-  'res://MainScene.tscn': Node2D,
   'res://Level2.tscn': Node2D,
+  'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player,
+  'res://Level3.tscn': Node2D,
+  'res://MainScene.tscn': Node2D,
   'res://compiled/Player.gd': import('/Users/johnfn/code/RainbowRoad/src/Player').Player
 }
 
