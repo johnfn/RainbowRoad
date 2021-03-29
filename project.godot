@@ -9,12 +9,24 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "KinematicBody2D",
+"base": "Area2D",
+"class": "Door",
+"language": "GDScript",
+"path": "res://compiled/Door.gd"
+}, {
+"base": "Node2D",
+"class": "Hud",
+"language": "GDScript",
+"path": "res://compiled/Hud.gd"
+}, {
+"base": "Node2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://compiled/Player.gd"
 } ]
 _global_script_class_icons={
+"Door": "",
+"Hud": "",
 "Player": ""
 }
 
@@ -23,10 +35,6 @@ _global_script_class_icons={
 config/name="RainbowRoad"
 run/main_scene="res://MainScene.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-NewScript="*res://new_script.gd"
 
 [rendering]
 

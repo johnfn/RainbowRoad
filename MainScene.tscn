@@ -1,20 +1,30 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/block.png" type="Texture" id=3]
+[ext_resource path="res://block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Door.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Hud.tscn" type="PackedScene" id=4]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 23.0757, 23.3108 )
-
-[node name="Node2D" type="Node2D"]
+[node name="Level1" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 173.106, 344.694 )
 
-[node name="block" type="Sprite" parent="."]
-position = Vector2( 174.611, 409.356 )
-texture = ExtResource( 3 )
+[node name="block" parent="." instance=ExtResource( 2 )]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="block"]
+[node name="block2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 555.776, 373.751 )
+scale = Vector2( 1.78386, 1.71762 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="block/StaticBody2D"]
-shape = SubResource( 1 )
+[node name="block3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 440.681, 388.931 )
+
+[node name="block4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 350.703, 383.963 )
+
+[node name="block5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 255.757, 375.683 )
+
+[node name="Door" parent="." instance=ExtResource( 3 )]
+
+[node name="Hud" parent="." instance=ExtResource( 4 )]

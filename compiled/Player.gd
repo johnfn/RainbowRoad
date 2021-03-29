@@ -61,3 +61,7 @@ func enter_door():
     else:
       if ((typeof(current_scene) == typeof("Level3")) and (current_scene == "Level3")):
         self.get_tree().change_scene("res://YouWin.tscn")
+        
+      
+      else:
+        print("What the...")
