@@ -4,8 +4,8 @@ class_name Player
 
 
 
-var speed: int = 200
-var vy: int = 0
+var speed: float = 200.0
+var vy: float = 0.0
 
 func _ready(): 
   
@@ -13,17 +13,15 @@ func _ready():
   print("Hello world")
 
 func _physics_process(_delta):
-  var dx: int = 0
-  var dy: int = 0
+  var dx: float = 0.0
+  var dy: float = 0.0
   
   if not self.is_on_floor():
-    self.vy += 1
+    self.vy += 0.03
     
   
   else:
     self.vy = 0
-  
-  print(self.vy)
   
   if Input.is_key_pressed(KEY_A):
     dx -= 1
@@ -36,6 +34,9 @@ func _physics_process(_delta):
   
   if Input.is_key_pressed(KEY_S):
     dy += 1
+  
+  if Input.is_key_pressed(KEY_SPACE) and self.is_on_floor():
+    self.vy = -1.3
   
   dy += self.vy
   
