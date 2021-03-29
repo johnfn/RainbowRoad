@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "Player",
 "language": "GDScript",
 "path": "res://compiled/Player.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Block",
+"language": "GDScript",
+"path": "res://compiled/Block.gd"
 } ]
 _global_script_class_icons={
 "Door": "",
 "Hud": "",
 "Player": ""
+"Block": ""
 }
 
 [application]
