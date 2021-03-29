@@ -1,5 +1,9 @@
+// For next time:
+// * set up a local autobuilder so we can use liveshare
+
 export class Player extends KinematicBody2D {
   speed: float = 200
+  vy: float = 0
 
   constructor() {
     super()
@@ -10,6 +14,14 @@ export class Player extends KinematicBody2D {
   _physics_process(delta: float) {
     let dx = 0
     let dy = 0
+
+    if (!this.is_on_floor()) {
+      this.vy += 1
+    } else {
+      this.vy = 0
+    }
+
+    print(this.vy)
 
     if (Input.is_key_pressed(KeyList.KEY_A)) {
       dx -= 1
@@ -26,6 +38,8 @@ export class Player extends KinematicBody2D {
     if (Input.is_key_pressed(KeyList.KEY_S)) {
       dy += 1
     }
+
+    dy += this.vy
 
     const dPosition = new Vector2(dx, dy).mul(this.speed)
 

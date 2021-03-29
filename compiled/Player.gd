@@ -5,6 +5,7 @@ class_name Player
 
 
 var speed: int = 200
+var vy: int = 0
 
 func _ready(): 
   
@@ -14,6 +15,13 @@ func _ready():
 func _physics_process(_delta):
   var dx: int = 0
   var dy: int = 0
+  
+  if not self.is_on_floor():
+    self.vy += 1
+    
+  
+  else:
+    self.vy = 0
   
   if Input.is_key_pressed(KEY_A):
     dx -= 1
