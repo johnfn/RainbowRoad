@@ -7,6 +7,9 @@ class_name Player
 var speed: float = 200.0
 var vy: float = 0.0
 
+func _ready(): 
+  pass
+
 func _physics_process(_delta):
   var dx: float = 0.0
   var dy: float = 0.0

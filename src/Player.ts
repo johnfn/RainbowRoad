@@ -5,6 +5,10 @@ export class Player extends KinematicBody2D {
   speed: float = 200.0
   vy: float = 0.0
 
+  constructor() {
+    super()
+  }
+
   _physics_process(delta: float) {
     let dx = 0.0
     let dy = 0.0
