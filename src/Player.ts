@@ -1,5 +1,5 @@
 // For next time:
-// * set up a local autobuilder so we can use liveshare
+// * set up a local autobuilder to HTML5 so we can use liveshare
 
 export class Player extends KinematicBody2D {
   speed: float = 200.0
