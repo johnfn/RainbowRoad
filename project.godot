@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://compiled/Hud.gd"
 }, {
+"base": "Node2D",
+"class": "Level1",
+"language": "GDScript",
+"path": "res://compiled/Level1.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
@@ -33,6 +38,7 @@ _global_script_class_icons={
 "Block": "",
 "Door": "",
 "Hud": "",
+"Level1": "",
 "Player": ""
 }
 
@@ -41,6 +47,10 @@ _global_script_class_icons={
 config/name="RainbowRoad"
 run/main_scene="res://MainScene.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+PlayMusicScene="*res://PlayMusicScene.tscn"
 
 [rendering]
 

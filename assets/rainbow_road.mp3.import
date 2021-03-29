@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rainbow_road.mp3-c6311671b017c1bd56b6c3b35b7bc059.mp3str"
+
+[deps]
+
+source_file="res://assets/rainbow_road.mp3"
+dest_files=[ "res://.import/rainbow_road.mp3-c6311671b017c1bd56b6c3b35b7bc059.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
