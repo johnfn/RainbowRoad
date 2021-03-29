@@ -69,7 +69,7 @@ export class Player extends KinematicBody2D {
 
   set_eye_color(delta: float) {
     this.curr_beat += delta;
-    while (this.curr_beat > ColorSet.colors.size()) {
+    while (this.curr_beat >= ColorSet.colors.size()) {
       this.curr_beat -= ColorSet.colors.size();
     }
     let color1i = floor(this.curr_beat);
