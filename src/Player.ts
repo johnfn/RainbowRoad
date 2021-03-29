@@ -75,8 +75,8 @@ export class Player extends KinematicBody2D {
     let color1i = floor(this.curr_beat);
     let color_mix_perc = this.curr_beat - color1i;
     let color2i = color1i + 1;
-    if (color2i == ColorSet.colors.size()) {
-      color2i--;
+    if (color2i >= ColorSet.colors.size()) {
+      color2i -= ColorSet.colors.size();
     }
     let color1 = ColorSet.colors[color1i];
     let color2 = ColorSet.colors[color2i];
