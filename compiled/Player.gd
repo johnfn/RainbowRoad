@@ -23,6 +23,8 @@ func _physics_process(_delta):
   else:
     self.vy = 0
   
+  print(self.vy)
+  
   if Input.is_key_pressed(KEY_A):
     dx -= 1
   
@@ -34,6 +36,8 @@ func _physics_process(_delta):
   
   if Input.is_key_pressed(KEY_S):
     dy += 1
+  
+  dy += self.vy
   
   var dPosition = Vector2(dx, dy) * self.speed
   

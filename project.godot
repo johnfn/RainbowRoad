@@ -24,6 +24,10 @@ config/name="RainbowRoad"
 run/main_scene="res://MainScene.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+NewScript="*res://new_script.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
