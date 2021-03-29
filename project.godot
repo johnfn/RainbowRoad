@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node2D",
+"base": "StaticBody2D",
+"class": "Block",
+"language": "GDScript",
+"path": "res://compiled/Block.gd"
+}, {
+"base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://compiled/Player.gd"
 } ]
 _global_script_class_icons={
+"Block": "",
 "Player": ""
 }
 

@@ -1,19 +1,19 @@
-// class Block {
-//     beat: number;
-//     x: number;
-//     y: number;
-//     width: number;
-//     height: number;
+export class Block extends StaticBody2D {
+    beat: float;
+    x: float;
+    y: float;
+    width: float;
+    height: float;
 
-//     constructor(beat: number, x: number, y: number, width: number, height: number) {
-//         this.beat = beat;
-//         this.x = x;
-//         this.y = y;
-//         this.width = width;
-//         this.height = height;
-//     }
+    constructor(beat: float, x: float, y: float, width: float, height: float) {
+        this.beat = beat;
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
 
-//     render() {
+    render() {
         
-//     }
-// }
+    }
+}
