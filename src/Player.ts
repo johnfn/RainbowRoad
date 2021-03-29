@@ -51,4 +51,9 @@ export class Player extends KinematicBody2D {
 
     this.move_and_slide(dPosition, new Vector2(0, -1))
   }
+
+  enter_door() {
+    print("Door!")
+    this.get_tree().change_scene("res://Level2.tscn")
+  }
 }

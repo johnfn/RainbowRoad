@@ -45,3 +45,7 @@ func _physics_process(_delta):
   var dPosition = Vector2(dx, dy) * self.speed
   
   self.move_and_slide(dPosition, Vector2(0, -1))
+
+func enter_door():
+  print("Door!")
+  self.get_tree().change_scene("res://Level2.tscn")
