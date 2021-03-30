@@ -8,11 +8,11 @@ extents = Vector2( 23.0757, 23.3108 )
 
 [node name="block6" type="StaticBody2D"]
 position = Vector2( 255.757, 375.683 )
-script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -0.552002 )
 shape = SubResource( 1 )
+script = ExtResource( 2 )
 
 [node name="block" type="Sprite" parent="."]
 position = Vector2( 0.25, 0 )
