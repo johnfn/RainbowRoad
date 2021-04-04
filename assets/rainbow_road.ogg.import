@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rainbow_road.ogg-df87fbf7b0799aedbf0b624d93a65db9.oggstr"
+
+[deps]
+
+source_file="res://assets/rainbow_road.ogg"
+dest_files=[ "res://.import/rainbow_road.ogg-df87fbf7b0799aedbf0b624d93a65db9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
